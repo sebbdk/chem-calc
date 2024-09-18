@@ -9,13 +9,18 @@
   "author": "",
   "license": "ISC",
   "description": "",
+  "@parcel/resolver-default": {
+    "packageExports": true
+  },
   "dependencies": {
     "htm": "^3.1.1",
     "parcel": "^2.12.0",
+    "parcel-transformer-markdown": "^3.0.1",
     "preact": "^10.24.0",
     "react": "npm:@preact/compat@^18.3.1",
     "react-dom": "npm:@preact/compat@^18.3.1",
     "react-latex-next": "^3.0.0",
+    "react-markdown": "^9.0.1",
     "styled-components": "^6.1.13"
   },
   "devDependencies": {

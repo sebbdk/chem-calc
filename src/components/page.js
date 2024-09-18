@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { ChemReactionInput } from "./chem_reaction_input";
 import { ChemReactionPreview } from "./chem_reaction_preview";
 import { useState } from "react";
+import { ReadMe } from "./readme";
 
 const PageLayout = styled.div`
     border: 2px solid #999;
@@ -14,7 +15,7 @@ const PageLayout = styled.div`
 
 export function Page() {
     const [state, setState] = useState({
-        leftLatex: "5 * HCl + 9000H_2O",
+        leftLatex: "5 * HCl(g) + 9000H_2O(l)",
         reactionType: String.fromCodePoint(8594),
         rightLatex: "OH^- + Cl^- + H_20\\ or\\ something"
     });
@@ -25,6 +26,8 @@ export function Page() {
 
     return html`
         <${PageLayout}>
+            <h1>Chemistry Chaos</h1>
+
             <${ChemReactionInput}
                 onChange=${onReactionChange}
                 ...${state}
@@ -36,5 +39,7 @@ export function Page() {
                 rightLatex=${state.rightLatex}
             />
         </${PageLayout}>
+
+        <${ReadMe} />
     `;
 }
