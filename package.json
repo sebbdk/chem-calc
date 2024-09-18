@@ -1,0 +1,24 @@
+{
+  "name": "chem-calc",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "htm": "^3.1.1",
+    "parcel": "^2.12.0",
+    "preact": "^10.24.0",
+    "react": "npm:@preact/compat@^18.3.1",
+    "react-dom": "npm:@preact/compat@^18.3.1",
+    "react-latex-next": "^3.0.0",
+    "styled-components": "^6.1.13"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}
