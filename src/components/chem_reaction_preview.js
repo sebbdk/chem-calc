@@ -33,7 +33,7 @@ function ChemPreview(props) {
     const latex =  props.latex ? `$${props.latex}$` : "";
 
     const replacedLaTeX = (props.children || latex)
-                            .replace("*", "\\cdot")
+                            .replaceAll("*", "\\cdot")
 
     return html`
         <${ChemPreviewRoot}>
